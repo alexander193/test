@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(processLine("a1ss    2d"));
         System.out.println(processLine("a1ss    2d"));
+        System.out.println(processLine("a1ss    2d"));
     }
     public static String processLine(String line) {
         StringBuilder reverse = new StringBuilder();
