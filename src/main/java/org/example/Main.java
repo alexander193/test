@@ -5,23 +5,23 @@ public class Main {
         System.out.println(processLine("a1ss    2d"));
     }
     public static String processLine(String line) {
-        String reverse = "";
+        StringBuilder reverse = new StringBuilder();
         for (int i = (line.length() - 1); i >= 0; i--) {
-            reverse += line.charAt(i);
+            reverse.append(line.charAt(i));
         }
-        String noNum = "";
+        StringBuilder noNum = new StringBuilder();
         for (int i = 0; i < reverse.length(); i++) {
             if (reverse.charAt(i) >= '0' && reverse.charAt(i) <= '9')
                 continue;
-            noNum += reverse.charAt(i);
+            noNum.append(reverse.charAt(i));
         }
-        String noSpace = "";
+        StringBuilder noSpace = new StringBuilder();
         for (int i = 0; i < noNum.length(); i++) {
             if (noNum.charAt(i) == ' ' || noNum.charAt(i) == '\t') {
-                noSpace += '_';
+                noSpace.append('_');
             }
             else
-                noSpace += noNum.charAt(i);
+                noSpace.append(noNum.charAt(i));
         }
         return "LOG" + noSpace;
     }
