@@ -5,6 +5,8 @@ public class Main {
         System.out.println(processLine("a1ss    2d"));
         System.out.println(processLine("a1ss    2d"));
         System.out.println(processLine("a1ss    2d"));
+        System.out.println(processLine("a1ss    2d"));
+        System.out.println(processLine("a1ss    2d"));
     }
     public static String processLine(String line) {
         StringBuilder reverse = new StringBuilder();
